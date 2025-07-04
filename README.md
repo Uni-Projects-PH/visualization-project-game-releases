@@ -1,0 +1,11 @@
+# Finaler Meilenstein (15. September 2024)
+Das Repository hat nun seinen finalen Zustand erreicht. Alle Änderungen und Abweichungen können im entsprechenden Project Report PDF eingesehen werden, welches sich [HIER](public/data/Visualisierung-Project-Report_Write-Up_PaulHufnagel.pdf) befindet. Das Projekt lässt sich mit "npm install" einrichten. Der nachfolgende Abschnitt umfasst den Zustand des README-Files zum WIP-Meilenstein. Ich habe diesen Teil im README gelassen, um so den Verlauf dieser Datei darstellen zu können.
+
+# Erläuterungen zum "Work-in-progress"-Meilenstein
+Dieses Repository enthält den aktuellen Status für den "Work-in-progress"-Meilenstein. Ursprünglich hatte ich vor, die Geocoding-API zuerst zu implementieren, habe im Rahmen der Entwicklung aber recht schnell gemerkt, dass diese Reihenfolge problematisch ist. Aus diesem Grund habe ich mich dazu entschieden, die Implementierung der Videospiele-Daten und somit die Erstellung der Zeitachse vorzuziehen. 
+
+In dem aktuellen Status wird beim Launching der Anwendung eine Zeitachse erstellt und mit Daten über Videospiele befüllt. Die Videospiel-Daten stammen dabei aus einer CSV-Datei, welche ich von Kaggle bezogen habe und die lokal im Projekt hinterlegt ist. Dadurch kann ich den Datensatz begrenzen und so die APIs, die später verwenden will, werden nicht überlastet. Der Kaggle-Datensatz ist sehr aktuell (Stand: 07.07.2024) und enthält sogar Daten aus diesem Jahr. Das liegt daran, dass es sich bei dem Datensatz, um eine Zusammenstellung von Daten aus der Videospieldatenbank "vgchartz.com" (siehe [hier](https://www.vgchartz.com/gamedb/)) handelt. Der Kaggle-Datensatz wurde gewählt, da dieser - genau wie man der vgchartz-Datenbak entnehmen kann - auch Daten zu Verkaufszahlen enthält. 
+
+Das Aussehen ist noch recht rudimentär und wird sich noch verändern. Da ich für die Entwicklung zu diesem Meilenstein aufgrund anderer Module nicht so viel Zeit hatte, habe ich die Funktionalität priorisiert und werde das Design erst später ausbauen, sobald alle wichtigen Komponenten implementiert worden sind.
+
+Auch die Filter-Widgets werden sich dann noch erweitern. Da diese bidirektional über die Karte und Zeitachse funktionieren sollen, hat das bereits bestehende Filter-Widget für die Zeitachse ebenfalls noch nicht alle Funktionalitäten implementiert.
