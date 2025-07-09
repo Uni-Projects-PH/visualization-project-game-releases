@@ -1,4 +1,4 @@
-# AKTUELLER HINWEIS (8. Juni 2025)
+# AKTUELLER HINWEIS (8. Juli 2025)
 Die Live-Demo ist leider nicht verfügbar. Das Projekt ist im Rahmen eines Uni-Moduls entstanden und wurde auf Basis der Google Geocode API entwickelt. Der API-Key ist in der Zwischenzeit (das Projekt stammt aus Sommer 2024) abgelaufen und wurde/wird nicht erneuert, da dies Geld kosten würde. Da die Webseite ohne API nur aus ein paar leeren Feldern und Buttons besteht, wird keine Live Demo bereitgestellt. Die App greift zwar auch auf lokal hinterlegte Daten zu, aber da die Google API ein zentrales Element darstellt, wird dennoch auf eine Liveschaltung verzichtet. Sie können sich dennoch im Repository - und damit Source-Code der Webseite - umschauen.
 
 # Finaler Meilenstein (15. September 2024)
