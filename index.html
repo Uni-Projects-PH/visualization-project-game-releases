@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/visualization-project-game-releases/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game-Releases über Ort & Zeit</title>
+    <script type="module" crossorigin src="/visualization-project-game-releases/assets/index-DuR6_Zzc.js"></script>
+    <link rel="stylesheet" crossorigin href="/visualization-project-game-releases/assets/index-BUImvdj0.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="map-container">
+        <div id="map-canvas" class="card map">
+          <button id="open-legend-button" class="open-legend-button">Legende einblenden</button>
+          <button id="reset-pin-to-heat-button" class="reset-heat-button" style="display: none;">Entwickler-Pin entfernen</button>
+        </div>
+        <div class="card map-filter">
+          <h2>Map-Einstellungen</h2>
+          <h3>Spieleentwickler-Filter:</h3>
+          <div style="display: flex; gap: 1rem">
+            <select id="game-developer-filter" style="width: 100%"></select>
+          </div>
+          <div style="display: flex; gap: 1rem">
+            <h3>Heatmap-Modus:</h3>
+            <button id="toggle-heatmap-mode">Wechsel zu Pins</button>
+          </div>
+          <div style="display: flex; gap: 1rem">
+            <h3>Karte zurücksetzen:</h3>
+            <button id="toggle-reinitialization-of-map">(Re-)Initialisierung</button>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-container">
+        <div class="card timeline">
+          <button id="open-popup-button" class="open-popup-button">[+] Spiel manuell hinzufügen</button>
+          <div id="timeline-canvas"></div>
+          <div style="display: flex; justify-content: space-between">
+            <button id="timeline-prev">Ein Jahr zurück</button>
+            <button id="timeline-next">Ein Jahr vor</button>
+          </div>
+          <div class="timeline-games">
+            <p style="margin-left: 0.5rem">Liste an Spielen aus dem Jahr <span id="timeline-games-year">(noch nicht ausgewählt)</span>:</p>
+            <div id="timeline-games-list">
+
+            </div>
+          </div>
+        </div>
+        <div class="card timeline-filter">
+          <h2>Zeitachsen-Einstellungen</h2>
+          <h3>Intervall-Filter:</h3>
+          <div style="display: flex; gap: 1rem">
+            <input id="timeline-from-filter"/>
+            <span>-</span>
+            <input id="timeline-to-filter"/>
+          </div>
+          <div style="display: flex; gap: 1rem; margin-top: 1rem; justify-content: center">
+            <button id="timeline-interval-apply">Anwenden</button>
+            <button id="timeline-interval-reset">Zurücksetzen</button>
+          </div>
+          <h3>Spieltitel-Suche:</h3>
+          <div style="display: flex; gap: 1rem">
+            <input id="game-title-search" style="width: 100%" />
+            <button id="game-title-search-button">Suchen</button>
+          </div>
+          <div class="filter-buttons-wrapper">
+            <h3>Nach Genres filtern:</h3>
+            <button id="open-genre-settings-filter">Optionen öffnen</button>
+            <button id="reset-genre-filter" style="display: none;">Filter zurücksetzen</button>
+          </div>
+          <div id="genre-filter-popup" class="filter-popup" style="display: none;">
+            <h2>Genre-Filter</h2>
+            <span id="close-genre-filter-button" class="close-button filter-close-button">&times;</span>
+            <div id="genre-filter-content" class="filter-content-list"></div>
+            <button id="apply-genre-filter-button">Auswahl anwenden</button>
+          </div>
+          <div class="filter-buttons-wrapper">
+            <h3>Nach Plattformen filtern:</h3>
+            <button id="open-platform-settings-filter">Optionen öffnen</button>
+            <button id="reset-plaform-filter" style="display: none;">Filter zurücksetzen</button>
+          </div>
+          <div id="platform-filter-popup" class="filter-popup" style="display: none;">
+            <h2>Plattform-Filter</h2>
+            <span id="close-platform-filter-button" class="close-button filter-close-button">&times;</span>
+            <div id="platform-filter-content" class="filter-content-list platform-filter-list"></div>
+            <button id="apply-platform-filter-button">Auswahl anwenden</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="game-info-sidebar" class="sidebar" style="display: none;">
+        <span id="close-sidebar-button" class="close-button">X</span>
+        <h2>Spielinformationen</h2>
+        <div id="game-info-content"></div>
+      </div>
+
+      <div id="legend-popup" style="display: none;">
+        <h3>Heatmap-Legende</h3>
+        <span id="close-legend-button" class="close-button">X</span>
+        <div class="legend-gradient"></div>
+      </div>
+
+      <div id="add-new-popup" class="popup" style="display: none;">
+        <div class="popup-content">
+          <div class="popup-header">
+            <h2>Spiel manuell hinzufügen</h2>
+            <span id="close-popup-button" class="close-button">&times;</span>
+          </div>
+          <input id="add-new-game" placeholder="Neues Spiel hinzufügen" />
+          <button id="add-new-game-button" class="add-new-game-button-class">Hinzufügen</button>
+          <p class="hint-text-popup">Hinweis: Manuell hinzugefügte Spiele, werden nur in die Zeitleiste eingetragen, nicht in die Karte. Außerdem können nicht alle Eigenschaften abgerufen werden. <br>[Daten werden von <a href="https://rawg.io/">RAWG.io</a> bezogen]</p>
+        </div>
+      </div>
+    </div>
+
+
+
+  </body>
+</html>
