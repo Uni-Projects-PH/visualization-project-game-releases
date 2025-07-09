@@ -1,3 +1,6 @@
+# AKTUELLER HINWEIS (8. Juni 2025)
+Die Live-Demo ist leider nicht verfügbar. Das Projekt ist im Rahmen eines Uni-Moduls entstanden und wurde auf Basis der Google Geocode API entwickelt. Der API-Key ist in der Zwischenzeit (das Projekt stammt aus Sommer 2024) abgelaufen und wurde/wird nicht erneuert, da dies Geld kosten würde. Da die Webseite ohne API nur aus ein paar leeren Feldern und Buttons besteht, wird keine Live Demo bereitgestellt. Sie können sich dennoch im Repository - und damit Source-Code der Webseite - umschauen.
+
 # Finaler Meilenstein (15. September 2024)
 Das Repository hat nun seinen finalen Zustand erreicht. Alle Änderungen und Abweichungen können im entsprechenden Project Report PDF eingesehen werden, welches sich [HIER](public/data/Visualisierung-Project-Report_Write-Up_PaulHufnagel.pdf) befindet. Das Projekt lässt sich mit "npm install" einrichten. Der nachfolgende Abschnitt umfasst den Zustand des README-Files zum WIP-Meilenstein. Ich habe diesen Teil im README gelassen, um so den Verlauf dieser Datei darstellen zu können.
 
